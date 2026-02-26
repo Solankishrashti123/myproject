@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surprise for My Love! ❤️</title>
+    <style>
+        body {
+            background-color: #fff0f3; 
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive;
+            padding: 50px 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 30px;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(255, 77, 109, 0.2);
+            border: 2px solid #ff4d6d;
+            max-width: 400px;
+        }
+        /* Photo ki styling */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Isse photo gol (circle) ho jayegi */
+            border: 5px solid #ff4d6d;
+            object-fit: cover; /* Photo stretch nahi hogi */
+            margin-bottom: 20px;
+        }
+        h1 { color: #ff4d6d; font-size: 30px; margin: 10px 0; }
+        .name-tag { color: #c9184a; font-weight: bold; }
+        
+        .btn {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        #hidden-msg { margin-top: 25px; color: #555; display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="myphoto.jpeg" alt="My Handsome BF" class="profile-img">
+        
+        <h1>Hi <span class="name-tag">vipul</span>! 😍</h1>
+        <p>Aaj mere paas tumhare liye kuch surprise hai...</p>
+        
+        <button class="btn" onclick="showSurprise()">Secret Button 🤫</button>
+        
+        <div id="hidden-msg">
+            <h2 style="color: #ff4d6d;">I Love You! ❤️</h2>
+            <p>Tum meri puri duniya ho!<br><i>(Aur sirf meri)</i></p>
+            <p></p>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            alert("Oops! ❤️\n\nEk baat batana bhool gayi... \nTum mere favourite person ho!");
+            document.getElementById('hidden-msg').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
